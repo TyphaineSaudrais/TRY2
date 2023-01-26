@@ -1,0 +1,71 @@
+
+
+
+.banner {
+
+  
+    width: 1240px;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50%;
+    margin: auto;
+    margin-top: 20px;
+  
+    
+}
+
+.kasa-title{
+
+    color :#FF6060; 
+    text-align: left;
+    padding: 32px; 
+    font-size: 40px;
+}
+
+.kasa-logo {
+    margin-left: 10px;
+    
+}
+
+
+.banner nav {
+  
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+  
+
+}
+
+nav a  {
+
+    width: 136px;
+    height: 34px;
+    
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    /* or 34px */
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    text-decoration-line: underline;
+    line-height: 60%;
+    color: #FF6060;
+}
+
+.banner_link_Accueil {
+
+   
+
+}
+
+
+.banner_link_Apropos {
+
+    
+}
