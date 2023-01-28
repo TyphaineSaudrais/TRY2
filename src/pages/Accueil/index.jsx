@@ -61,6 +61,7 @@ function Accueil  () {
 
         <div className="main">
             <img src={banner} alt= "home-banner" className="home-banner"/>
+            <p className="text-banner">Chez vous, partout et ailleurs</p>
             <AppartRecap/>
         </div>
     
