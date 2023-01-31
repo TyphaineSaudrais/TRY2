@@ -3,6 +3,7 @@ import { AppartList } from "../../Datas/AppartList"
 import '../../utils/style/Logements.css';
 import Background from '../../assets/Background.png';
 import { Navigate, useParams } from "react-router-dom";
+import starRanking from "../../components/Stars";
 
 function Logements() {
 
@@ -24,7 +25,8 @@ function Logements() {
                     <div className='Logement-presentation'>
                         <h2>{LogementDisplayed.title}</h2>
                         <p>{LogementDisplayed.location}</p>
-                        <p>{LogementDisplayed.rating}</p>
+                        <p>{starRanking(LogementDisplayed.rating)}</p>
+                        
                         
                     </div>
                     <div className='Logement-tags'>
