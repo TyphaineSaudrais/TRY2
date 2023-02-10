@@ -1,9 +1,10 @@
 import { AppartList } from "../../Datas/AppartList"
 /* import Presentation from "../../components/Presentation" */
 import '../../utils/style/Logements.css';
-import Background from '../../assets/Background.png';
 import { Navigate, useParams } from "react-router-dom";
 import starRanking from "../../components/Stars";
+import Caroussel from "../../components/Caroussel";
+import Collapse from "../../components/Collapse";
 
 function Logements() {
 
@@ -20,14 +21,15 @@ function Logements() {
 
         return (
             <div>
-                <img src={Background} alt="banner Logements" className='Logements-banner'/>
+                <div>
+                    {Caroussel(LogementDisplayed.pictures)}
+                </div>
                 <div key={LogementDisplayed.id} className='Logement-presentation'>
                     <div className='Logement-presentation'>
                         <h2>{LogementDisplayed.title}</h2>
                         <p>{LogementDisplayed.location}</p>
-                        <p>{starRanking(LogementDisplayed.rating)}</p>
-                        
-                        
+                      <div>{starRanking(LogementDisplayed.rating)}</div>
+                         
                     </div>
                     <div className='Logement-tags'>
                         <ul>
@@ -41,24 +43,18 @@ function Logements() {
                         <img src={LogementDisplayed.host.picture} alt="host presentation"/>
 
                    </div>
-                    <div className='Logement-description'>
-                        <h3>
-                            Description 
-                        </h3>
-                        <ul>
+                   <div className="infos_more">
+                        <Collapse label="Description" className="infos_more_title">
                             {LogementDisplayed.description}
-                        </ul>
-                   </div>
+                        </Collapse>
+                    </div>
                    <div className='Logement-equipements'>
-                        <h3>
-                            Equipements
-                        </h3>
-                        <ul>
-                            {equipments}
-                        </ul>
+                   <Collapse label="Equipments" className="infos_more_title">
+                      {equipments}
+                    </Collapse>
                    </div>
                    
-                </div>
+              </div>
             </div>
         )
     }
