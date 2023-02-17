@@ -1,14 +1,24 @@
 import { AppartList } from "../../Datas/AppartList"
 import AppartCard from "../Card"
-import '../../utils/style/AppartRecap.css'
-import '../../utils/style/Card.css'
+import styled from 'styled-components';
+
+
+const WrapperCard = styled.div `
+display: flex;
+flex-wrap: wrap;
+margin: 50px 50px; 
+justify-content: center;
+`
+
+
+
 
 
 function AppartRecap() {
 	
 	return (
 		<div>
-			<div className='appart-list'>
+			<WrapperCard >
 				{AppartList.map(({ id, title, cover }) => (
 					<AppartCard
 						id={id}
@@ -16,7 +26,7 @@ function AppartRecap() {
 						cover= {cover}
 					/>
 				))}
-			</div>
+			</WrapperCard>
 		</div>
 	)
 }

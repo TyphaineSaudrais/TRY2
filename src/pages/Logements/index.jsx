@@ -1,10 +1,13 @@
 import { AppartList } from "../../Datas/AppartList"
 /* import Presentation from "../../components/Presentation" */
-import '../../utils/style/Logements.css';
 import { Navigate, useParams } from "react-router-dom";
 import starRanking from "../../components/Stars";
 import Caroussel from "../../components/Caroussel";
 import Collapse from "../../components/Collapse";
+
+
+
+
 
 function Logements() {
 

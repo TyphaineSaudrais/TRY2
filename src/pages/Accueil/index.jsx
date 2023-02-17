@@ -48,10 +48,36 @@ export default Accueil
 
 import banner from "../../assets/banner.png";
 import AppartRecap from '../../components/AppartRecap';
-import "../../utils/style/Accueil.css";
+import styled from 'styled-components';
 
 
+const Img = styled.img `
+    width: 1240px;
+    height: 223px;
+    display: block;
+    margin: auto; 
+    border-radius: 25px;
+`
 
+
+const TextPresentation = styled.p `
+
+    position: relative;
+    bottom: 130px;
+    left: 10px;
+    width: 700px;
+    overflow-wrap: break-word;
+    margin: auto; 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+    /* or 68px */
+   
+
+    color: #FFFFFF;
+    `
 
 
 
@@ -60,8 +86,8 @@ function Accueil  () {
  return (
 
         <div className="main">
-            <img src={banner} alt= "home-banner" className="home-banner"/>
-            <p className="text-banner">Chez vous, partout et ailleurs</p>
+            <Img src={banner}  alt ="home banner"/>
+            <TextPresentation>Chez vous, partout et ailleurs</TextPresentation>
             <AppartRecap/>
         </div>
     
