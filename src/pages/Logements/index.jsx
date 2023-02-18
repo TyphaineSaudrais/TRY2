@@ -4,8 +4,24 @@ import { Navigate, useParams } from "react-router-dom";
 import starRanking from "../../components/Stars";
 import Caroussel from "../../components/Caroussel";
 import Collapse from "../../components/Collapse";
+import styled from 'styled-components';
 
 
+
+const InfoMore = styled.div `
+display: flex 
+
+`
+
+const DescriptionCollapse = styled.div `
+ width: 100%; 
+
+`
+
+const EquipmentCollapse = styled.div `
+width: 100%; 
+
+`
 
 
 
@@ -46,17 +62,18 @@ function Logements() {
                         <img src={LogementDisplayed.host.picture} alt="host presentation"/>
 
                    </div>
-                   <div className="infos_more">
-                        <Collapse label="Description" className="infos_more_title">
-                            {LogementDisplayed.description}
-                        </Collapse>
-                    </div>
-                   <div className='Logement-equipements'>
-                   <Collapse label="Equipments" className="infos_more_title">
-                      {equipments}
-                    </Collapse>
-                   </div>
-                   
+                   <InfoMore>
+                        <DescriptionCollapse>
+                                <Collapse label="Description" className="infos_more_title">
+                                    {LogementDisplayed.description}
+                                </Collapse>
+                            </DescriptionCollapse>
+                        <EquipmentCollapse className='Logement-equipements'>
+                                <Collapse label="Equipments" className="infos_more_title">
+                                    {equipments}
+                                    </Collapse>
+                        </EquipmentCollapse>
+                  </InfoMore>
               </div>
             </div>
         )

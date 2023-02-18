@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 
 const CarousselWrap = styled.div `
-    background-color: aquamarine;
+    background-color: #FF6060;
 `
 
 const CarousselCover = styled.img `
