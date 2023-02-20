@@ -12,7 +12,15 @@ const Img = styled.img `
     border-radius: 25px;
 `
 
+const CollapseSmallWrap = styled.div `
 
+width: 60%; 
+ margin: auto; 
+ background-color: #F7F7F7;
+ border-radius: 5px; 
+ margin-top : 40px;
+ margin-bottom : 40px;
+`
 
 function Apropos() {
 
@@ -21,9 +29,11 @@ function Apropos() {
         <div>
             <Img src={bannerApropos} alt="banner A propos" className='Apropos-banner' />
                     {Rules.map(({ id, titre, contenue}) => (
-                    <Collapse key={id} label={titre}>
-                        <p>{contenue}</p>
-                    </Collapse>
+                    <CollapseSmallWrap className="collapse">
+                            <Collapse key={id} label={titre}>
+                                <p>{contenue}</p>
+                            </Collapse>
+                    </CollapseSmallWrap>     
                     ))}
         </div>
     )

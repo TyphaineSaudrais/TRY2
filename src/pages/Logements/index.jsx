@@ -11,19 +11,27 @@ import styled from 'styled-components';
 const InfoMore = styled.div `
 display: flex 
 
+
 `
 
 const DescriptionCollapse = styled.div `
- width: 100%; 
+ width: 40%; 
+ margin-left: 85px; 
 
 `
 
 const EquipmentCollapse = styled.div `
-width: 100%; 
+width: 40%; 
+margin-left: 85px; 
 
 `
 
+const LogementPresentation = styled.div `
 
+margin-bottom: 15px; 
+
+
+`
 
 function Logements() {
 
@@ -43,7 +51,7 @@ function Logements() {
                 <div>
                     {Caroussel(LogementDisplayed.pictures)}
                 </div>
-                <div key={LogementDisplayed.id} className='Logement-presentation'>
+                <LogementPresentation key={LogementDisplayed.id} >
                     <div className='Logement-presentation'>
                         <h2>{LogementDisplayed.title}</h2>
                         <p>{LogementDisplayed.location}</p>
@@ -74,7 +82,7 @@ function Logements() {
                                     </Collapse>
                         </EquipmentCollapse>
                   </InfoMore>
-              </div>
+              </LogementPresentation>
             </div>
         )
     }

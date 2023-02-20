@@ -3,15 +3,7 @@ import VectorArrowUp from "../../assets/VectorArrowUp.png"
 import VectorArrowDown from "../../assets/VectorArrowDown.png"
 import styled from 'styled-components';
 
-const CollapseSmallWrap = styled.div `
 
-width: 60%; 
- margin: auto; 
- background-color: #F7F7F7;
- border-radius: 5px; 
- margin-top : 40px;
- margin-bottom : 40px;
-`
 
 const Toggle = styled.div `
 
@@ -34,7 +26,7 @@ const Description = styled.div `
 background-color: #F7F7F7;
 color: #FF6060; 
 border-radius: 5px; 
-margin: 3px 3px 3px 3px; 
+padding: 25px 10px 25px 10px; 
 line-height: 150%; 
 `
 
@@ -71,7 +63,7 @@ export default function Collapse(props){
 
    return (
 
-       <CollapseSmallWrap className="collapse">
+        <div>
            <Toggle onClick={() => setIsOpen(!isOpen)}>
                 <RuleTitle className="Collapse-title">{props.label}</RuleTitle>
                 {!isOpen? <Vector src={VectorArrowDown} alt=" arrow down "/>: <Vector src={VectorArrowUp} alt="Arrow up "/>}
@@ -81,8 +73,8 @@ export default function Collapse(props){
                     {props.children}
                 </Description>
            }
-       </CollapseSmallWrap>
-
+     
+        </div>
    )
          }
 
