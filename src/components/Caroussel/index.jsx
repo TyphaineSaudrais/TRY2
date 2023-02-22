@@ -5,12 +5,32 @@ import styled from 'styled-components';
 
 
 const CarousselWrap = styled.div `
-    background-color: #FF6060;
+    position: relative; 
+    height:450px; 
+    width: 85%; 
+    margin: auto; 
+    
 `
 
 const CarousselCover = styled.img `
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+`
+const Arrows = styled.div `
+    position: absolute; 
+    top: 45%;
+    width: 100%;
+    
+`
+
+const ArrowsImg = styled.div `
+    display: flex; 
+    justify-content: space-between; 
+    margin: 10px; 
+    
+
 `
 
 function Caroussel(props) {
@@ -21,9 +41,12 @@ return (
 
     <CarousselWrap>
         <CarousselCover src={props[displayedImg]} alt="Carousel cover"/>
-        <img src={VectorLeft} alt="arrow left"  onClick={() => displayedImg > 0 && setCurrentDisplayedImg(displayedImg - 1)  }/>
-        <img src={VectorRight} alt="arrow right" onClick={() => displayedImg < props.length && setCurrentDisplayedImg(displayedImg + 1) }/>
-
+        <Arrows>
+            <ArrowsImg>
+                <img src={VectorLeft} alt="arrow left"  onClick={() => displayedImg > 0 && setCurrentDisplayedImg(displayedImg - 1)  }/>
+                <img src={VectorRight} alt="arrow right" onClick={() => displayedImg < props.length && setCurrentDisplayedImg(displayedImg + 1) }/>
+            </ArrowsImg>
+        </Arrows>
     </CarousselWrap>
 )
 

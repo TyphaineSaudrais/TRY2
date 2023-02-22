@@ -27,6 +27,7 @@ const AppartImg = styled.img `
     height: 340px;
     width: 340px;
     border-radius: 10px;
+    object-fit: cover;
     `
 
 

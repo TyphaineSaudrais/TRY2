@@ -7,32 +7,59 @@ import Collapse from "../../components/Collapse";
 import styled from 'styled-components';
 
 
+const LogementTitle = styled.h2 `
+
+
+`
 
 const InfoMore = styled.div `
-display: flex 
-
+display: flex; 
+justify-content: space-around; 
+margin-bottom: 15px; 
 
 `
 
 const DescriptionCollapse = styled.div `
  width: 40%; 
- margin-left: 85px; 
+
 
 `
 
 const EquipmentCollapse = styled.div `
 width: 40%; 
-margin-left: 85px; 
+
 
 `
 
 const LogementPresentation = styled.div `
 
-margin-bottom: 15px; 
+display: flex; 
+justify-content: space-around; 
+margin-bottom: 21px; 
 
 
 `
 
+const LogementDescription = styled.div `
+    display: flex; 
+    flex-direction: column; 
+`
+const LogementHost = styled.div `
+    display: flex; 
+    flex-direction: column; 
+`
+const Host = styled.div `
+display: flex; 
+justify-content: space-around; 
+`
+
+
+const HostImg = styled.img `
+width: 50px; 
+border-radius: 50%;
+margin: 5px; 
+
+`
 function Logements() {
 
 
@@ -52,25 +79,27 @@ function Logements() {
                     {Caroussel(LogementDisplayed.pictures)}
                 </div>
                 <LogementPresentation key={LogementDisplayed.id} >
-                    <div className='Logement-presentation'>
-                        <h2>{LogementDisplayed.title}</h2>
+                    <LogementDescription>
+                        <LogementTitle>{LogementDisplayed.title}</LogementTitle>
                         <p>{LogementDisplayed.location}</p>
-                      <div>{starRanking(LogementDisplayed.rating)}</div>
-                         
-                    </div>
-                    <div className='Logement-tags'>
-                        <ul>
-                            {tags}
-                        </ul>
-                   </div>
-                   <div className='Logement-host'>
-                        <h4>
-                            {LogementDisplayed.host.name}
-                        </h4>
-                        <img src={LogementDisplayed.host.picture} alt="host presentation"/>
-
-                   </div>
-                   <InfoMore>
+                        <div className='Logement-tags'>
+                            <ul>
+                                {tags}
+                            </ul>
+                        </div>    
+                    </LogementDescription>
+                    
+                   <LogementHost>
+                        <Host>
+                                <h4>
+                                    {LogementDisplayed.host.name}
+                                </h4>
+                                <HostImg src={LogementDisplayed.host.picture} alt="host presentation"/>
+                        </Host>
+                        <div>{starRanking(LogementDisplayed.rating)}</div>
+                   </LogementHost>
+              </LogementPresentation>
+              <InfoMore>
                         <DescriptionCollapse>
                                 <Collapse label="Description" className="infos_more_title">
                                     {LogementDisplayed.description}
@@ -82,7 +111,6 @@ function Logements() {
                                     </Collapse>
                         </EquipmentCollapse>
                   </InfoMore>
-              </LogementPresentation>
             </div>
         )
     }
