@@ -22,6 +22,13 @@ width: 60%;
  margin-bottom : 40px;
 `
 
+
+const AproposDescription = styled.p `
+    font-size: 19px; 
+    line-height: 28px; 
+    margin-left: 10px; 
+`
+
 function Apropos() {
 
     
@@ -31,7 +38,7 @@ function Apropos() {
                     {Rules.map(({ id, titre, contenue}) => (
                     <CollapseSmallWrap className="collapse">
                             <Collapse key={id} label={titre}>
-                                <p>{contenue}</p>
+                                <AproposDescription>{contenue}</AproposDescription>
                             </Collapse>
                     </CollapseSmallWrap>     
                     ))}

@@ -20,9 +20,6 @@ const AppartName = styled.p `
   `
 
 
-
-
-
 const AppartImg = styled.img `
     height: 340px;
     width: 340px;

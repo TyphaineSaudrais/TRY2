@@ -51,21 +51,12 @@ import AppartRecap from '../../components/AppartRecap';
 import styled from 'styled-components';
 
 
-const Img = styled.img `
-    width: 1240px;
-    height: 223px;
-    display: block;
-    margin: auto; 
-    border-radius: 25px;
-`
+
 
 
 const TextPresentation = styled.p `
 
-    position: relative;
-    bottom: 130px;
-    left: 10px;
-    width: 700px;
+   
     overflow-wrap: break-word;
     margin: auto; 
     font-family: 'Montserrat';
@@ -73,10 +64,21 @@ const TextPresentation = styled.p `
     font-weight: 500;
     font-size: 48px;
     text-align: center;
+    padding-top: 80px; 
     /* or 68px */
    
 
     color: #FFFFFF;
+    `
+
+    const BannerAccueil = styled.div `
+    background-image: url(${banner});
+    width: 1240px;
+    height: 223px;
+    display: block;
+    margin: auto; 
+    border-radius: 25px;
+
     `
 
 
@@ -86,8 +88,9 @@ function Accueil  () {
  return (
 
         <div className="main">
-            <Img src={banner}  alt ="home banner"/>
-            <TextPresentation>Chez vous, partout et ailleurs</TextPresentation>
+            <BannerAccueil>
+              <TextPresentation>Chez vous, partout et ailleurs</TextPresentation>
+            </BannerAccueil>
             <AppartRecap/>
         </div>
     

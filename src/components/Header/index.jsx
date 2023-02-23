@@ -29,6 +29,7 @@ const BannerNavigation = styled.nav `
     height: 24px;
     display: flex;
     justify-content: space-between;
+    align-items: center; 
     height: 68px;
   `
 
@@ -43,10 +44,10 @@ const BannerLink = styled.a `
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     /* or 34px */
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     text-align: right;
     line-height: 60%;
     color: #FF6060;

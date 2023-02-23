@@ -1,5 +1,12 @@
 import OrangeFlag from "../../assets/Vector.png"
 import WhiteFlag from "../../assets/VectorStar.png"
+import styled from 'styled-components';
+
+
+const ImgStar = styled.img `
+margin: 5px; 
+
+`
 
 function starRanking (props) {
 
@@ -9,7 +16,7 @@ return (
    
             <div>
                 {starValue.map((starValue ) =>
-                    props >= starValue ? <img key={starValue.toString()} alt="orange start" src={OrangeFlag}/> :  <img key={starValue.toString()} alt="white start" src={WhiteFlag}/> 
+                    props >= starValue ? <ImgStar key={starValue.toString()} alt="orange start" src={OrangeFlag}/> :  <ImgStar key={starValue.toString()} alt="white start" src={WhiteFlag}/> 
                 )}
             </div>
         

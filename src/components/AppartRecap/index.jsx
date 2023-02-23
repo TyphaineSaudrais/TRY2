@@ -6,12 +6,12 @@ import styled from 'styled-components';
 const WrapperCard = styled.div `
 display: flex;
 flex-wrap: wrap;
-margin: 50px 50px; 
+margin: 50px 50px 50px 20px; 
 justify-content: center;
+background-color: #F6F6F6; 
+padding: 80px 50px 50px 0px; 
+border-radius: 15px; 
 `
-
-
-
 
 
 function AppartRecap() {

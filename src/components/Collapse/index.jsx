@@ -17,8 +17,9 @@ const Toggle = styled.div `
 `
 
 const RuleTitle = styled.h3 `
-margin: 1.1% 0px 1.1% 5px; 
+margin: 8px 0px 1.1% 15px; 
 font-weight: 500; 
+font-size: 19px; 
 
 `
 
@@ -26,14 +27,14 @@ const Description = styled.div `
 background-color: #F7F7F7;
 color: #FF6060; 
 border-radius: 5px; 
-padding: 25px 10px 25px 10px; 
+padding: 10px 10px 10px 10px; 
 line-height: 150%; 
 `
 
 const Vector = styled.img `
  height: 30%;
  display: block;  
- margin: 1.4% 5px 1.4% 0px; 
+ margin: 13px 20px 1.4% 0px; 
 `
 /* function Collapse(props) {
 
