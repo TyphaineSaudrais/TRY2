@@ -73,7 +73,7 @@ const TextPresentation = styled.p `
 
     const BannerAccueil = styled.div `
     background-image: url(${banner});
-    width: 1240px;
+    width: 85%;
     height: 223px;
     display: block;
     margin: auto; 

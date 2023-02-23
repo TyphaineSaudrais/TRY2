@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const BannerWrapper = styled.div `
 
-    width: 1240px;
+    width: 85%;
     height: 68px;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@ const KasaLogo =  styled.img `
 
 
 const BannerNavigation = styled.nav `
-  
+    width : 25% ; 
     height: 24px;
     display: flex;
     justify-content: space-between;

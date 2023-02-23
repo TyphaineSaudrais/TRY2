@@ -16,13 +16,17 @@ const AppartName = styled.p `
   color: #FFFFFF; 
   text-decoration: none; 
   & visited {color: #FFFFFF}; 
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+
   
   `
 
 
 const AppartImg = styled.img `
-    height: 340px;
-    width: 340px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     object-fit: cover;
     `

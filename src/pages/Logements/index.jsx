@@ -40,13 +40,13 @@ width: 85%;
 `
 
 const DescriptionCollapse = styled.div `
- width: 40%; 
+ width: 45%; 
 
 
 `
 
 const EquipmentCollapse = styled.div `
-width: 40%; 
+width: 45%; 
 list-style: none; 
 
 
