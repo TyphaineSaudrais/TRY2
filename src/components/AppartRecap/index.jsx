@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 const WrapperCard = styled.div `
 display: flex;
+flex-direction: row; 
 flex-wrap: wrap;
 margin: 50px auto; 
 justify-content: center;
@@ -13,8 +14,10 @@ padding: 20px 0px;
 border-radius: 15px; 
 width: 85%;
 @media (max-width: 768px) {
+	display: flex;
 	flex-direction: column;
 	width: 90%; 
+	
 	
 
 }

@@ -58,26 +58,38 @@ const TextPresentation = styled.p `
 
    
     overflow-wrap: break-word;
-    margin: auto; 
+    margin: 0px auto; 
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 240%;
     text-align: center;
-    padding-top: 80px; 
+    padding-top: 85px; 
     /* or 68px */
-   
-
     color: #FFFFFF;
+    @media (max-width: 768px) {
+       margin: Opx 5px;
+       
+    
+    }
     `
 
     const BannerAccueil = styled.div `
-    background-image: url(${banner});
+    background: linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ),  url(${banner});
     width: 85%;
     height: 223px;
     display: block;
     margin: auto; 
     border-radius: 25px;
+    @media (max-width: 768px) {
+        width: 90%;
+       
+    
+    }
+   
 
     `
 

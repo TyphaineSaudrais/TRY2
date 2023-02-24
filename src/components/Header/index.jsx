@@ -10,12 +10,11 @@ const BannerWrapper = styled.div `
     display: flex;
     justify-content: space-between;
     line-height: 50%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 50px; 
+    margin: 50px auto;
     @media (max-width: 768px) {
-        justify-content: space-around;
-    
+        justify-content: space-between;
+       
+        
     }
   
     `
@@ -24,12 +23,16 @@ const BannerWrapper = styled.div `
 
 const KasaLogo =  styled.img `
     margin-left: 10px;
+    @media (max-width: 768px) {
+        margin-right: 80px;
+        
+    }
     
 `
 
 
 const BannerNavigation = styled.nav `
-    width : 25% ; 
+    width : 35% ; 
     height: 24px;
     display: flex;
     justify-content: space-between;
@@ -37,6 +40,7 @@ const BannerNavigation = styled.nav `
     height: 68px;
     @media (max-width: 768px) {
         justify-content: space-around;
+        width: 50%;
     
     }
   `
@@ -45,7 +49,7 @@ const BannerNavigation = styled.nav `
 
 const BannerLink = styled.a `
 
-    width: 35%;
+    width: 120%;
     height: 34px;
     text-decoration: none;
     &: hover { text-decoration-line: underline} 
@@ -56,12 +60,13 @@ const BannerLink = styled.a `
     /* or 34px */
     display: flex;
     align-items: center;
-    text-align: right;
+    ftext-align: revert;
     line-height: 60%;
     color: #FF6060;
     @media (max-width: 768px) {
-        width: 20%;
-        font-size: 18px;
+        width: 100%;
+        font-size: 30px;
+        text-transform: capitalize;
     
     }
   

@@ -20,7 +20,7 @@ const AppartName = styled.p `
   width: 300px;
   margin: 20px;
   @media (max-width: 768px) {
-    width: 90%; 
+    width: 100%; 
     margin: 10px auto;
 
 
@@ -43,7 +43,9 @@ const Card = styled.div `
     flex-direction: column;
     margin: 0 30px;
     @media (max-width: 768px) {
+        width: 90%; 
         margin: auto;
+        margin-bottom: 20px;
     
     }
    

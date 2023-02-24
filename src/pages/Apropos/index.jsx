@@ -21,6 +21,11 @@ width: 60%;
  border-radius: 5px; 
  margin-top : 40px;
  margin-bottom : 40px;
+ @media (max-width: 768px) {
+    width: 85%;
+  
+
+}
 `
 
 

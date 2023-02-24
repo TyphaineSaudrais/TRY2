@@ -58,6 +58,11 @@ display: flex;
 justify-content: space-between; 
 margin: auto;
 width: 85%; 
+@media (max-width: 768px) {
+    display: column; 
+    justify-content: space-around; 
+
+}
 
 `
 
