@@ -24,7 +24,7 @@ margin-top: 0px;
 
 const Stars = styled.div `
 margin: 10px; 
-width: 201px;
+width: 100%;
 height: 36px;
 `
 
@@ -62,10 +62,12 @@ width: 85%;
 `
 
 const LogementDescription = styled.div `
+    width: 80%; 
     display: flex; 
     flex-direction: column; 
 `
 const LogementHost = styled.div `
+    width: 20%;   
     display: flex; 
     flex-direction: column; 
     margin-top: 35px;

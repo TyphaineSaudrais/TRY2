@@ -5,11 +5,12 @@ import Collapse from "../../components/Collapse";
 import styled from 'styled-components';
 
 const Img = styled.img `
-    width: 1240px;
+    width: 85%;
     height: 223px;
     display: block;
     margin: auto; 
     border-radius: 25px;
+    object-fit: cover; 
 `
 
 const CollapseSmallWrap = styled.div `

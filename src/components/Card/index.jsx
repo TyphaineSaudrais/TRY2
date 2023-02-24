@@ -19,7 +19,12 @@ const AppartName = styled.p `
   height: 300px;
   width: 300px;
   margin: 20px;
+  @media (max-width: 768px) {
+    width: 90%; 
+    margin: 10px auto;
 
+
+}
   
   `
 
@@ -37,6 +42,10 @@ const Card = styled.div `
     display: flex;
     flex-direction: column;
     margin: 0 30px;
+    @media (max-width: 768px) {
+        margin: auto;
+    
+    }
    
 `
 

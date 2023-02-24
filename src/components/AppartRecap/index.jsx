@@ -15,6 +15,7 @@ width: 85%;
 @media (max-width: 768px) {
 	flex-direction: column;
 	width: 90%; 
+	
 
 }
 `
