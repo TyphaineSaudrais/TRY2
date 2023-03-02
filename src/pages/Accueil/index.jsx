@@ -68,8 +68,10 @@ const TextPresentation = styled.p `
     /* or 68px */
     color: #FFFFFF;
     @media (max-width: 768px) {
-       margin: Opx 5px;
-       
+       margin: 0px 21px;
+       text-align: left;
+       width: 80%;
+       padding-top: 62px;
     
     }
     `
@@ -86,8 +88,6 @@ const TextPresentation = styled.p `
     border-radius: 25px;
     @media (max-width: 768px) {
         width: 90%;
-       
-    
     }
    
 

@@ -65,8 +65,8 @@ const BannerLink = styled.a `
     color: #FF6060;
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 30px;
-        text-transform: capitalize;
+        font-size: 21px;
+        text-transform: uppercase;
     
     }
   

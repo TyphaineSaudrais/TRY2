@@ -26,6 +26,10 @@ const Stars = styled.div `
 margin: 10px; 
 width: 100%;
 height: 36px;
+@media (max-width: 768px) {
+    width: 40%;
+    margin: 15px 0px 0px 0px;
+}
 `
 
 
@@ -59,7 +63,7 @@ justify-content: space-between;
 margin: auto;
 width: 85%; 
 @media (max-width: 768px) {
-    display: column; 
+    flex-direction: column; 
     justify-content: space-around; 
 
 }
@@ -76,12 +80,22 @@ const LogementHost = styled.div `
     display: flex; 
     flex-direction: column; 
     margin-top: 35px;
+    @media (max-width: 768px) {
+        width: 100%;
+        flex-direction: row-reverse; 
+        justify-content: space-between; 
+        margin-top: 0px;
+    }
     
 `
 const Host = styled.div `
 display: flex; 
 justify-content: flex-end;
 margin-right: 20px; 
+@media (max-width: 768px) {
+    width: 40%;
+    margin-right: 0px; 
+}
 
 `
 

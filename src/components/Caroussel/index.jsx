@@ -44,7 +44,7 @@ return (
         <Arrows>
             <ArrowsImg>
                 <img src={VectorLeft} alt="arrow left"  onClick={() => displayedImg > 0 && setCurrentDisplayedImg(displayedImg - 1)  }/>
-                <img src={VectorRight} alt="arrow right" onClick={() => displayedImg < props.length && setCurrentDisplayedImg(displayedImg + 1) }/>
+                <img src={VectorRight} alt="arrow right" onClick={() => displayedImg < (props.length -1) && setCurrentDisplayedImg(displayedImg + 1) }/>
             </ArrowsImg>
         </Arrows>
     </CarousselWrap>
